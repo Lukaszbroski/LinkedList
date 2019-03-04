@@ -10,11 +10,12 @@
 using namespace std;
 
 struct Node {
-    string reciever;
-    string sender;
-    int amount;
-    long long id;
-    Node* next;
+    string reciever = "";
+    string sender = "";
+    int amount = 0;
+    long long id = 0;
+    Node* next = nullptr;
+    Node* last = nullptr;
 };
 
 class Ledger {
@@ -24,6 +25,7 @@ public:
     ~Ledger();
     void AddExternalMoney(string ToName,int Amount);
     void AddPayment(string FromName, string ToName, int Amount);
+    int AddPayment(string FromName, string ToName, int Amount);
     void RefundPayment(long long id);
     void RefundPayment(string FromName, string ToName, int amount);
     void Clear();
@@ -35,6 +37,7 @@ public:
 
 private:
     Node header = *new Node;
+    long long ID = 0;
 
 };
 
