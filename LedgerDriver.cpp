@@ -38,11 +38,5 @@ int main () {
 
     myLedger.Clear();
     myLedger.Print();
-
-
-
-
-
-
     return 0;
 }
