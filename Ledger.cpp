@@ -1,5 +1,5 @@
 //
-// Created by Lukasz Bakun on 2/27/2019.
+// Created by Lukasz on 2/27/2019.
 // Includes all implementations of methods in Ledger
 #include "Ledger.h"
 #include <string>
@@ -138,10 +138,10 @@ void Ledger::Clear() {
 }
 //prints out all transactions and nodes in the ledger
 void Ledger::Print() {
-    cout << "setting header" << endl;
+    //cout << "setting header" << endl;
     if (header.next != nullptr) {
         Node *currentNode = &header;
-        cout << "header set, attempting to loop" << endl;
+        //cout << "header set, attempting to loop" << endl;
         //until we reach the end, print out the node info
         while (currentNode->next != nullptr) {
             currentNode = currentNode->next;

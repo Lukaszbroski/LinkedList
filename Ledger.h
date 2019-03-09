@@ -1,5 +1,5 @@
 //
-// Created by Lukasz Bakun on 2/27/2019.
+// Created by Lukasz on 2/27/2019.
 //
 // Class Ledger definition with all methods of Ledger along with a Struct Node
 
